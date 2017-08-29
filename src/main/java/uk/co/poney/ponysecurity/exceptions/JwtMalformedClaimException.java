@@ -5,10 +5,14 @@ import uk.co.poney.ponysecurity.models.RequestData;
 
 public class JwtMalformedClaimException extends AbstractException {
 
-    //private final MalformedClaimException exception;
+    private final MalformedClaimException parentException;
 
-    public JwtMalformedClaimException(MalformedClaimException exception, RequestData requestData) {
+    public JwtMalformedClaimException(MalformedClaimException parentException, RequestData requestData) {
         super("Malformed Claim", requestData);
-        //this.exception = exception;
+        this.parentException = parentException;
+    }
+
+    public MalformedClaimException getParentException() {
+        return parentException;
     }
 }

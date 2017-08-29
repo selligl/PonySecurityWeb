@@ -5,10 +5,14 @@ import uk.co.poney.ponysecurity.models.RequestData;
 
 public class JwtInvalidException extends AbstractException {
 
-    //private final InvalidJwtException exception;
+    private final InvalidJwtException parentException;
 
-    public JwtInvalidException(InvalidJwtException exception, RequestData requestData) {
+    public JwtInvalidException(InvalidJwtException parentException, RequestData requestData) {
         super("JWT Invalid", requestData);
-        //this.exception = exception;
+        this.parentException = parentException;
+    }
+
+    public InvalidJwtException getParentException() {
+        return parentException;
     }
 }
