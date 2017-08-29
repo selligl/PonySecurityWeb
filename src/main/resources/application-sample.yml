@@ -23,5 +23,5 @@ application:
   2ndFactorTimeout: 20
 
 google:
-  authorization: *** Put google authorization key here ***
-  deviceid: *** Set target device id here ***
+  authorization: #*** Put google authorization key here ***
+  deviceid: #*** Set target device id here ***

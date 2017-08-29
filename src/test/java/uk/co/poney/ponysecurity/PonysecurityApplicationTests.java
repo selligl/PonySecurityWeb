@@ -11,7 +11,7 @@ import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@ActiveProfiles("dev")
+@ActiveProfiles("sample")
 public class PonysecurityApplicationTests {
 
     @Value("${application.name}")
