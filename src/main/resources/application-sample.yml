@@ -1,0 +1,27 @@
+endpoints:
+  enabled: false
+  info:
+     enabled: false
+debug: false
+
+logging:
+    level:
+        org:
+            springframework:
+                web: WARN
+        root: WARN
+        PonySecurity : INFO
+
+spring:
+    output:
+        ansi:
+            enabled: ALWAYS
+
+application:
+  name: PonySecurity
+  baseurl: http://127.0.0.1:8080
+  2ndFactorTimeout: 20
+
+google:
+  authorization: *** Put google authorization key here ***
+  deviceid: *** Set target device id here ***
