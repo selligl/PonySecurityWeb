@@ -1,8 +1,5 @@
 .gradle
 
-!gradle/wrapper/gradle-wrapper.jar
-
-
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -12,5 +9,4 @@
 /build/
 /src/main/resources/application.yml
 /out/
-/gradle/
 /ssh.gradle
